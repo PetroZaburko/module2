@@ -38,7 +38,7 @@ class QueryBuilder
             ->bindValue('id', $id);
         $stm = $this->pdo->prepare($one->getStatement());
         $stm->execute($one->getBindValues());
-        return $stm->fetchAll(PDO::FETCH_ASSOC);
+        return $stm->fetch(PDO::FETCH_ASSOC);
     }
 
     public function insert($values, $table)

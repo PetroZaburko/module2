@@ -105,7 +105,7 @@ class Route
      * Return base URL
      * @return string
      */
-    protected static function getBasePath() {
+    public static function getBasePath() {
         if (self::$basePath == null) {
             self::$basePath = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
         }

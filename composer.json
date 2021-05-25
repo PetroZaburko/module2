@@ -2,7 +2,8 @@
     "name": "gigabyte_tech/module2",
     "description": "test",
     "require": {
-        "aura/sqlquery": "2.7.1"
+        "aura/sqlquery": "2.7.1",
+        "league/plates": "3.*"
     },
     "autoload": {
         "psr-4": {
