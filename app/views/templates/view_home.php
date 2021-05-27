@@ -2,6 +2,6 @@
 
 <ul>
     <li>
-        <a href="<?=\App\Route::getBasePath() ?>all">All users</a>
+        <a href="<?=\App\Route::getBasePath() ?>users/all">All users</a>
     </li>
 </ul>
