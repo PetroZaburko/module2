@@ -10,6 +10,7 @@ insert into users_statuses (status, interpretation) values
 ('Not here', 'warning'),
 ('Do not distrub', 'danger');
 
+
 CREATE table users_info (
 id int auto_increment primary key,
 user_id int not null,
