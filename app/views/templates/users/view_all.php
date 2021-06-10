@@ -6,7 +6,6 @@ use App\Helpers;
 $this->layout('view_user_head', ['title' => $title]);
 ?>
 
-
 <main id="js-page-content" role="main" class="page-content mt-3">
     <?= flash()->display(); ?>
     <div class="subheader">
