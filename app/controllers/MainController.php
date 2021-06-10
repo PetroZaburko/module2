@@ -1,20 +1,23 @@
 <?php
 
-
 namespace App\controllers;
 
-use App\QueryBuilder;
+use App\models\UsersModel;
+use Delight\Auth\Auth;
 use League\Plates\Engine;
+use League\Plates\Extension\Asset;
 
 class MainController
 {
-    protected $db;
     protected $templates;
+    protected $auth;
+    protected $user;
 
-    public function __construct()
+    public function __construct( Engine $templates, Auth $auth, UsersModel $user)
     {
-        $this->db = new QueryBuilder();
-        $this->templates = new Engine('../app/views/templates');
+        $this->templates = $templates;
+        $templates->loadExtension(new Asset('./'));
+        $this->auth = $auth;
+        $this->user = $user;
     }
-
 }
